@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphy Project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="gif"></div>
+    <div id="animalButtons" class="topics"></div>
+    <script>
+        var topics = ["Penguin", "Pug", "Bear", "Goat"];
+        var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + topics + "&api_key=tmJIMO9lUCeu2gahwNz7Jpy9dfQKELCM";
+        console.log(topics)
+        console.log($)
+
+        function createButtons() {
+            $("#animalButtons").empty();
+            for (var i = 0; i < topics.length; i++) {
+                var gifButton = $("<button>");
+                gifButton.addClass("topics");
+                gifButton.addClass("btn btn-primary")
+                gifButton.attr("data-name", topics[i]);
+                gifButton.text(topics[i]);
+                $("#animalButtons").append(gifButton);
+                console.log(gifButton);
+            }
+        }
+        createButtons();
+
+
+
+    </script>
+</body>
+
+</html>
