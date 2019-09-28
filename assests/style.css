@@ -2,7 +2,7 @@
 width: 300px;
 height: 150px;
 border-style: solid;
-border-color: blue;
+border-color: rgb(84, 162, 252);
 float: right;
 background-color: white;
 margin-right: 20px;
@@ -10,13 +10,20 @@ padding-left: 5px;
 padding-right: 5px;
 padding-top: 5px;
 Padding-bottom: 5px;
+border-radius: 25px;
+background-color: rgb(117, 166, 223);
+color: white;
 }
 
 body{
-    background: url("/Users/annemariehin/bootcamp/Giphy-Project/assests/Images/hotel-wallpaper.png");
+    background: url("/Users/annemariehin/bootcamp/Giphy-Project/assests/Images/art-background-blue-sky-289649 copy.jpg");
 }
 
 .topics{
     margin-left: 20px;
     margin-top: 10px;
+}
+
+button {
+    color: white;
 }
